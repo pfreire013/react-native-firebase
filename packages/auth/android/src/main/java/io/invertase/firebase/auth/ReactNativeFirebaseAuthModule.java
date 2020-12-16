@@ -315,6 +315,8 @@ class ReactNativeFirebaseAuthModule extends ReactNativeFirebaseModule {
     FirebaseApp firebaseApp = FirebaseApp.getInstance(appName);
     FirebaseAuth firebaseAuth = FirebaseAuth.getInstance(firebaseApp);
 
+    firebaseAuth.setTenantId("Patients-y7344");
+
     firebaseAuth
       .createUserWithEmailAndPassword(email, password)
       .addOnSuccessListener(authResult -> {
